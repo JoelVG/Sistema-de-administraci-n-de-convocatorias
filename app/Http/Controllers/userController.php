@@ -11,25 +11,38 @@ class userController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()//controlador para iniciar sesion
+     public function login()//controlador para iniciar sesion
+     {
+         return view("Registro.login");
+     } 
+     
+    
+     public function convocatoriaRegistrado()//controlador para convocatoria para registrados
+     {
+         return view("Registro.registrado");
+     }
+     public function convocatoriaSinRegistro()//controlador para convocatoria no registrado
     {
-        return view ("login");
-        
+        return view("Registro.sinregistro");
     }
 
+
+
+     public function index()
+     {
+         //return view ("Registro.login");
+         
+     }
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()//controlador para registrarse
+    public function create()
     {
-        return view('Registro.registrado');
+        //return view('Registro.registrado');
     }
-    public function sinRegistro()
-    {
-        return view('Registro.sinregistro');
-    }
+    
 
     /**
      * Store a newly created resource in storage.

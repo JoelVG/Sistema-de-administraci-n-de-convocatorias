@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    login
+                    login de la carpeta Registro
                 </div>
 
                 <div class="links">

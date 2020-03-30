@@ -14,6 +14,10 @@
 /*Route::get('/principal', function () {
     return view('welcome');
 });*/
-Route::get('/posts/index',"userController@index");
 
-Route::resource('posts','userController');
+//rutas para indexar en la pagina
+Route::get('/Registro/login',"userController@login");
+Route::get('/Registro/registrado',"userController@convocatoriaRegistrado");
+Route::get('/Registro/sinregistro',"userController@convocatoriaSinRegistro");
+
+Route::resource('Registro','userController');
