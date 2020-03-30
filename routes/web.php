@@ -14,4 +14,6 @@
 /*Route::get('/principal', function () {
     return view('welcome');
 });*/
-Route::resource('Registro','userController');
+Route::get('/posts/index',"userController@index");
+
+Route::resource('posts','userController');
