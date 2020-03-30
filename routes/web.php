@@ -14,4 +14,4 @@
 /*Route::get('/principal', function () {
     return view('welcome');
 });*/
-Route::resource('registro','userController');
+Route::resource('Registro','userController');
