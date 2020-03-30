@@ -13,7 +13,7 @@ class userController extends Controller
      */
     public function index()//controlador para iniciar sesion
     {
-        return view ("login");
+        return view ("Registro.login");
         
     }
 
@@ -25,6 +25,10 @@ class userController extends Controller
     public function create()//controlador para registrarse
     {
         return view('Registro.registrado');
+    }
+    public function sinRegistro()
+    {
+        return view('Registro.sinregistro');
     }
 
     /**
