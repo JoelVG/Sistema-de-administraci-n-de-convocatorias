@@ -24,7 +24,7 @@ class userController extends Controller
      */
     public function create()//controlador para registrarse
     {
-        //
+        return view('Registro.registrado');
     }
 
     /**
