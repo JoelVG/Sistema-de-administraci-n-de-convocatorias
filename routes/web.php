@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/principal', function () {
+/*Route::get('/principal', function () {
     return view('welcome');
-});
+});*/
+Route::resource('registro','userController');

@@ -11,9 +11,10 @@ class userController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index()//controlador para iniciar sesion
     {
-        //
+        return view ("login");
+        
     }
 
     /**
@@ -21,7 +22,7 @@ class userController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create()//controlador para registrarse
     {
         //
     }
